@@ -1,0 +1,19 @@
+{
+  "item.titanmod.raw_citrin": "Raw Citrin",
+  "item.titanmod.citrin_ingot": "Citrin Ingot",
+  "item.titanmod.crystal": "Titan Crystal",
+  "item.titanmod.titan_ingot": "Titan Ingot",
+  "item.titanmod.titan_powder": "Titan Powder",
+  "item.titanmod.nether_shard": "Nether Shard",
+  "item.titanmod.nether_ingot": "Nether Ingot",
+  "item.titanmod.handle": "Handle",
+
+  "block.titanmod.citrin_ore": "Citrin Ore",
+  "block.titanmod.deepslate_citrin_ore": "Deepslate Citrin Ore",
+  "block.titanmod.citrin_block": "Citrin Block",
+  "block.titanmod.titan_ore": "Titan Ore",
+  "block.titanmod.deepslate_titan_ore": "Deepslate Titan Ore",
+  "block.titanmod.nether_ore": "Nether Ore",
+
+  "creativetab.titanmod.titan_tab": "§b§lTitan"
+}

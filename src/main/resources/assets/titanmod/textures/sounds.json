@@ -1,0 +1,82 @@
+{
+  "hagebuddne": {
+    "sounds": [
+      {
+        "name": "legendmod:hagebuddne",
+        "stream": true
+      }
+    ]
+  },
+    "luegendisc": {
+        "sounds": [
+        {
+            "name": "legendmod:luegendisc",
+            "stream": true
+        }
+        ]
+    },
+  "rainer_1": {
+    "sounds": [
+      {
+        "name": "legendmod:rainer_1",
+        "stream": true
+      }
+    ]
+  },
+  "rainer_2": {
+    "sounds": [
+      {
+        "name": "legendmod:rainer_2",
+        "stream": true
+      }
+    ]
+  },
+  "rainer_3": {
+    "sounds": [
+      {
+        "name": "legendmod:rainer_3",
+        "stream": true
+      }
+    ]
+  },
+  "rainer_4": {
+    "sounds": [
+      {
+        "name": "legendmod:rainer_4",
+        "stream": true
+      }
+    ]
+  },
+  "rainer_5": {
+    "sounds": [
+      {
+        "name": "legendmod:rainer_5",
+        "stream": true
+      }
+    ]
+  },
+  "rainer_6": {
+    "sounds": [
+      {
+        "name": "legendmod:rainer_6",
+        "stream": true
+      }
+    ]
+  },
+  "rainer_7": {
+    "sounds": [
+      {
+        "name": "legendmod:rainer_7",
+        "stream": true
+      }
+    ]
+  },
+  "ritual": {
+    "sounds": [
+      {
+        "name": "legendmod:ritual",
+        "stream": true
+      }
+    ]
+  }
+}
