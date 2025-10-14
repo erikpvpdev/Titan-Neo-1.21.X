@@ -1,5 +1,5 @@
 
-Installation information
+Mod Information
 =======
 
 This Mod is working on Neoforge!
