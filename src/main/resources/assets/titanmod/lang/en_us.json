@@ -19,5 +19,8 @@
   "block.titanmod.deepslate_titan_ore": "Deepslate Titan Ore",
   "block.titanmod.nether_ore": "Nether Ore",
 
-  "creativetab.titanmod.titan_tab": "§b§lTitan"
+  "creativetab.titanmod.titan_tab": "§b§lTitan",
+
+  "tooltip.titanmod.citrin.tooltip": "§a25% Poison Chance",
+  "tooltip.titanmod.nether.tooltip": "§c25% Fire Chance"
 }

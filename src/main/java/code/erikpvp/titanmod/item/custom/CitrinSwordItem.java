@@ -30,10 +30,7 @@ public class CitrinSwordItem extends SwordItem {
     public boolean isValidRepairItem(ItemStack toRepair, ItemStack repair) {
         return true;
     }
-    public void appendHoverText(ItemStack stack, @Nullable Level level,
-                                List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(Component.literal("§a25% Poison Chance"));
-    }
+
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         // 25% chance

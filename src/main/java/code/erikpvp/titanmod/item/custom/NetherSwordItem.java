@@ -29,11 +29,6 @@ public class NetherSwordItem extends SwordItem {
         return true;
     }
 
-    public void appendHoverText(ItemStack stack, @Nullable Level level,
-                                List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(Component.literal("§c25% Fire Chance"));
-    }
-
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         // 25% chance to ignite the target

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": ""
+    }
+  },
+  "pattern": [
+    "",
+    "I",
+    "I"
+  ],
+  "result": {
+    "count": 1,
+    "id": "titanmod:titan_sword"
+  }
+}

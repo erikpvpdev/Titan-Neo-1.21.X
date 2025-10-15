@@ -4,11 +4,18 @@ import code.erikpvp.titanmod.TitanMod;
 import code.erikpvp.titanmod.item.custom.CitrinSwordItem;
 import code.erikpvp.titanmod.item.custom.NetherSwordItem;
 import code.erikpvp.titanmod.item.custom.TitanSwordItem;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 public class TitanItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TitanMod.MOD_ID);
@@ -39,7 +46,13 @@ public class TitanItems {
 
     public static final DeferredItem<SwordItem> CITRIN_SWORD = ITEMS.register("citrin_sword",
             () -> new CitrinSwordItem(TitanToolTiers.CITRIN, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(TitanToolTiers.CITRIN, 2, 9996f))));
+                    .attributes(SwordItem.createAttributes(TitanToolTiers.CITRIN, 2, 9996f))) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.titanmod.citrin.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     public static final DeferredItem<SwordItem> TITAN_SWORD = ITEMS.register("titan_sword",
             () -> new TitanSwordItem(TitanToolTiers.TITAN, new Item.Properties()
@@ -47,7 +60,13 @@ public class TitanItems {
 
     public static final DeferredItem<SwordItem> NETHER_SWORD = ITEMS.register("nether_sword",
             () -> new NetherSwordItem(TitanToolTiers.NETHER, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(TitanToolTiers.NETHER, 2, 9996f))));
+                    .attributes(SwordItem.createAttributes(TitanToolTiers.NETHER, 2, 9996f))){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.titanmod.nether.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
