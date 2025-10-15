@@ -3,12 +3,10 @@ package code.erikpvp.titanmod.item;
 import code.erikpvp.titanmod.TitanMod;
 import code.erikpvp.titanmod.item.custom.CitrinSwordItem;
 import code.erikpvp.titanmod.item.custom.NetherSwordItem;
+import code.erikpvp.titanmod.item.custom.TitanArmorMaterials;
 import code.erikpvp.titanmod.item.custom.TitanSwordItem;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -52,6 +50,19 @@ public class TitanItems {
     public static final DeferredItem<SwordItem> NETHER_SWORD = ITEMS.register("nether_sword",
             () -> new NetherSwordItem(TitanToolTiers.NETHER, new Item.Properties()
                     .attributes(SwordItem.createAttributes(TitanToolTiers.NETHER, 2, 9996f))));
+
+    public static final DeferredItem<Item> CITRIN_HELMET = ITEMS.register("citrin_helmet",
+            () -> new ArmorItem(TitanArmorMaterials.CITRIN_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(12))));
+    public static final DeferredItem<Item> CITRIN_CHESTPLATE = ITEMS.register("citrin_chestplate",
+            () -> new ArmorItem(TitanArmorMaterials.CITRIN_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(12))));
+    public static final DeferredItem<Item> CITRIN_LEGGINGS = ITEMS.register("citrin_leggings",
+            () -> new ArmorItem(TitanArmorMaterials.CITRIN_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(12))));
+    public static final DeferredItem<Item> CITRIN_BOOTS = ITEMS.register("citrin_boots",
+            () -> new ArmorItem(TitanArmorMaterials.CITRIN_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(12))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

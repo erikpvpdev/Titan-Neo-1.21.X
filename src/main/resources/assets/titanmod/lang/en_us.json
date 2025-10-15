@@ -12,6 +12,11 @@
   "item.titanmod.citrin_sword": "§eCitrin Sword",
   "item.titanmod.nether_sword": "§cNether Sword",
 
+  "item.titanmod.citrin_helmet": "§eCitrin Helmet",
+  "item.titanmod.citrin_chestplate": "§eCitrin Chestplate",
+  "item.titanmod.citrin_leggings": "§eCitrin Leggings",
+  "item.titanmod.citrin_boots": "§eCitrin Bootss",
+
   "block.titanmod.citrin_ore": "Citrin Ore",
   "block.titanmod.deepslate_citrin_ore": "Deepslate Citrin Ore",
   "block.titanmod.citrin_block": "Citrin Block",
