@@ -8,6 +8,10 @@
   "item.titanmod.nether_ingot": "Nether Ingot",
   "item.titanmod.handle": "Handle",
 
+  "item.titanmod.titan_sword": "§e§k|| §3Titan Sword §e§k||§r",
+  "item.titanmod.citrin_sword": "§eCitrin Sword",
+  "item.titanmod.nether_sword": "§cNether Sword",
+
   "block.titanmod.citrin_ore": "Citrin Ore",
   "block.titanmod.deepslate_citrin_ore": "Deepslate Citrin Ore",
   "block.titanmod.citrin_block": "Citrin Block",
