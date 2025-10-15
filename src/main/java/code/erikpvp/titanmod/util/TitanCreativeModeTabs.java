@@ -34,11 +34,15 @@ public class TitanCreativeModeTabs {
                         output.accept(TitanBlocks.TITAN_ORE);
                         output.accept(TitanBlocks.DEEPSLATE_TITAN_ORE);
                         output.accept(TitanBlocks.NETHER_ORE);
+                        output.accept(TitanBlocks.NETHER_BLOCK);
+                        output.accept(TitanBlocks.TITAN_BLOCK);
                         output.accept(TitanItems.TITAN_SWORD);
                         output.accept(TitanItems.CITRIN_SWORD);
                         output.accept(TitanItems.NETHER_SWORD);
-                        output.accept(TitanBlocks.NETHER_BLOCK);
-                        output.accept(TitanBlocks.TITAN_BLOCK);
+                        output.accept(TitanItems.CITRIN_HELMET);
+                        output.accept(TitanItems.CITRIN_CHESTPLATE);
+                        output.accept(TitanItems.CITRIN_LEGGINGS);
+                        output.accept(TitanItems.CITRIN_BOOTS);
                     }).build());
 
     public static void register(IEventBus eventBus) {

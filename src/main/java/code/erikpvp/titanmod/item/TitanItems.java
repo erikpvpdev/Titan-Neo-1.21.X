@@ -10,6 +10,7 @@ import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
 import java.util.List;
 
 public class TitanItems {
@@ -53,16 +54,40 @@ public class TitanItems {
 
     public static final DeferredItem<Item> CITRIN_HELMET = ITEMS.register("citrin_helmet",
             () -> new ArmorItem(TitanArmorMaterials.CITRIN_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(12))));
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(12))) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.titanmod.citrinarmor.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
     public static final DeferredItem<Item> CITRIN_CHESTPLATE = ITEMS.register("citrin_chestplate",
             () -> new ArmorItem(TitanArmorMaterials.CITRIN_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(12))));
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(12))) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.titanmod.citrinarmor.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
     public static final DeferredItem<Item> CITRIN_LEGGINGS = ITEMS.register("citrin_leggings",
             () -> new ArmorItem(TitanArmorMaterials.CITRIN_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(12))));
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(12))) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.titanmod.citrinarmor.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
     public static final DeferredItem<Item> CITRIN_BOOTS = ITEMS.register("citrin_boots",
             () -> new ArmorItem(TitanArmorMaterials.CITRIN_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(12))));
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(12))) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.titanmod.citrinarmor.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
