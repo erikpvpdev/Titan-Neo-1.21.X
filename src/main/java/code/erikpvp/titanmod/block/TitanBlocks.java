@@ -40,6 +40,13 @@ public class TitanBlocks {
     public static final DeferredBlock<Block> NETHER_ORE = registerBlock("nether_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of().strength(2.5f).requiresCorrectToolForDrops().sound(SoundType.NETHERRACK)));
+    public static final DeferredBlock<Block> NETHER_BLOCK = registerBlock("nether_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> TITAN_BLOCK = registerBlock("titan_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

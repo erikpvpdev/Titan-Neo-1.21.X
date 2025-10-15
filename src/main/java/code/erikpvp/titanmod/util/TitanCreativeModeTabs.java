@@ -16,7 +16,7 @@ public class TitanCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TitanMod.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> BISMUTH_ITEMS_TAB = CREATIVE_MODE_TAB.register("titan_tab",
+    public static final Supplier<CreativeModeTab> LEGEND_ITEMS_TAB = CREATIVE_MODE_TAB.register("titan_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(TitanItems.CRYSTAL.get()))
                     .title(Component.translatable("creativetab.titanmod.titan_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -37,6 +37,8 @@ public class TitanCreativeModeTabs {
                         output.accept(TitanItems.TITAN_SWORD);
                         output.accept(TitanItems.CITRIN_SWORD);
                         output.accept(TitanItems.NETHER_SWORD);
+                        output.accept(TitanBlocks.NETHER_BLOCK);
+                        output.accept(TitanBlocks.TITAN_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {

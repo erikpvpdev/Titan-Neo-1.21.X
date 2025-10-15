@@ -39,4 +39,10 @@ public class NetherSwordItem extends SwordItem {
 
         return super.hurtEnemy(stack, target, attacker);
     }
+
+        @Override
+        public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        tooltipComponents.add(Component.translatable("tooltip.titanmod.nether.tooltip"));
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+    }
 }
