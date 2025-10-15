@@ -1,7 +1,9 @@
 package code.erikpvp.titanmod.item;
 
 import code.erikpvp.titanmod.TitanMod;
+import code.erikpvp.titanmod.item.custom.CitrinSwordItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -32,6 +34,18 @@ public class TitanItems {
 
     public static final DeferredItem<Item> HANDLE = ITEMS.register("handle",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<SwordItem> CITRIN_SWORD = ITEMS.register("citrin_sword",
+            () -> new CitrinSwordItem(TitanToolTiers.CITRIN, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(TitanToolTiers.CITRIN, 3, -2.4f))));
+
+    public static final DeferredItem<SwordItem> TITAN_SWORD = ITEMS.register("titan_sword",
+            () -> new CitrinSwordItem(TitanToolTiers.TITAN, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(TitanToolTiers.TITAN, 5, -2.4f))));
+
+    public static final DeferredItem<SwordItem> NETHER_SWORD = ITEMS.register("nether_sword",
+            () -> new CitrinSwordItem(TitanToolTiers.NETHER, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(TitanToolTiers.NETHER, 3, -2.4f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

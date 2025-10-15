@@ -3,6 +3,9 @@
   "values": [
     "titanmod:citrin_block",
     "titanmod:citrin_ore",
-    "titanmod:deepslate_citrin_ore"
+    "titanmod:deepslate_citrin_ore",
+    "titanmod:titan_ore",
+    "titanmod:deepslate_titan_ore",
+    "titanmod:nether_ore"
   ]
 }

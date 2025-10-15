@@ -48,5 +48,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "titanmod:blocks/nether_ore"
+  "random_sequence": "titanmod:block/nether_ore"
 }
