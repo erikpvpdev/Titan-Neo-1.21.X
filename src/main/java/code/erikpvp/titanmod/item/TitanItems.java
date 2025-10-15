@@ -2,6 +2,8 @@ package code.erikpvp.titanmod.item;
 
 import code.erikpvp.titanmod.TitanMod;
 import code.erikpvp.titanmod.item.custom.CitrinSwordItem;
+import code.erikpvp.titanmod.item.custom.NetherSwordItem;
+import code.erikpvp.titanmod.item.custom.TitanSwordItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.neoforged.bus.api.IEventBus;
@@ -37,15 +39,15 @@ public class TitanItems {
 
     public static final DeferredItem<SwordItem> CITRIN_SWORD = ITEMS.register("citrin_sword",
             () -> new CitrinSwordItem(TitanToolTiers.CITRIN, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(TitanToolTiers.CITRIN, 3, -2.4f))));
+                    .attributes(SwordItem.createAttributes(TitanToolTiers.CITRIN, 2, 9996f))));
 
     public static final DeferredItem<SwordItem> TITAN_SWORD = ITEMS.register("titan_sword",
-            () -> new CitrinSwordItem(TitanToolTiers.TITAN, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(TitanToolTiers.TITAN, 5, -2.4f))));
+            () -> new TitanSwordItem(TitanToolTiers.TITAN, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(TitanToolTiers.TITAN, 5, 9996f))));
 
     public static final DeferredItem<SwordItem> NETHER_SWORD = ITEMS.register("nether_sword",
-            () -> new CitrinSwordItem(TitanToolTiers.NETHER, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(TitanToolTiers.NETHER, 3, -2.4f))));
+            () -> new NetherSwordItem(TitanToolTiers.NETHER, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(TitanToolTiers.NETHER, 2, 9996f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

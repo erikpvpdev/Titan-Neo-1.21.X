@@ -34,6 +34,9 @@ public class TitanCreativeModeTabs {
                         output.accept(TitanBlocks.TITAN_ORE);
                         output.accept(TitanBlocks.DEEPSLATE_TITAN_ORE);
                         output.accept(TitanBlocks.NETHER_ORE);
+                        output.accept(TitanItems.TITAN_SWORD);
+                        output.accept(TitanItems.CITRIN_SWORD);
+                        output.accept(TitanItems.NETHER_SWORD);
                     }).build());
 
     public static void register(IEventBus eventBus) {
