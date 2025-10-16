@@ -43,6 +43,10 @@ public class TitanCreativeModeTabs {
                         output.accept(TitanItems.CITRIN_CHESTPLATE);
                         output.accept(TitanItems.CITRIN_LEGGINGS);
                         output.accept(TitanItems.CITRIN_BOOTS);
+                        output.accept(TitanItems.TITAN_HELMET);
+                        output.accept(TitanItems.TITAN_CHESTPLATE);
+                        output.accept(TitanItems.TITAN_LEGGINGS);
+                        output.accept(TitanItems.TITAN_BOOTS);
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -1,10 +1,11 @@
 package code.erikpvp.titanmod.item;
 
 import code.erikpvp.titanmod.TitanMod;
-import code.erikpvp.titanmod.item.custom.CitrinSwordItem;
-import code.erikpvp.titanmod.item.custom.NetherSwordItem;
-import code.erikpvp.titanmod.item.custom.TitanArmorMaterials;
-import code.erikpvp.titanmod.item.custom.TitanSwordItem;
+import code.erikpvp.titanmod.item.custom.*;
+import code.erikpvp.titanmod.item.custom.legend.TitanBoots;
+import code.erikpvp.titanmod.item.custom.legend.TitanChestplate;
+import code.erikpvp.titanmod.item.custom.legend.TitanHelmet;
+import code.erikpvp.titanmod.item.custom.legend.TitanLeggings;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -88,6 +89,19 @@ public class TitanItems {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
+
+    public static final DeferredItem<Item> TITAN_HELMET = ITEMS.register("titan_helmet",
+            () -> new TitanHelmet(TitanArmorMaterials.TITAN_ARMOR_MATERIAL,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(1))));
+    public static final DeferredItem<Item> TITAN_CHESTPLATE = ITEMS.register("titan_chestplate",
+            () -> new TitanChestplate(TitanArmorMaterials.TITAN_ARMOR_MATERIAL,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(1))));
+    public static final DeferredItem<Item> TITAN_LEGGINGS = ITEMS.register("titan_leggings",
+            () -> new TitanLeggings(TitanArmorMaterials.TITAN_ARMOR_MATERIAL,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(1))));
+    public static final DeferredItem<Item> TITAN_BOOTS = ITEMS.register("titan_boots",
+            () -> new TitanBoots(TitanArmorMaterials.TITAN_ARMOR_MATERIAL,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(1))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
