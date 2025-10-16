@@ -1,0 +1,9 @@
+{
+  "asset_name": "citrin",
+  "description": {
+    "color": "#031CFC",
+    "translate": "trim_material.titanmod.citrin"
+  },
+  "ingredient": "titanmod:citrin_ingot",
+  "item_model_index": 0.5
+}
