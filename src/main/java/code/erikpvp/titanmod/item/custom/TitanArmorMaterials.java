@@ -25,7 +25,7 @@ public class TitanArmorMaterials {
                 attribute.put(ArmorItem.Type.LEGGINGS, 5);
                 attribute.put(ArmorItem.Type.CHESTPLATE, 6);
                 attribute.put(ArmorItem.Type.HELMET, 2);
-            }), 17, 0.5f, 0f, () -> TitanItems.CITRIN_INGOT.get());
+            }), 12, 0.2f, 0f, () -> TitanItems.CITRIN_INGOT.get());
 
     public static final Holder<ArmorMaterial> TITAN_ARMOR_MATERIAL = register("titan",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
@@ -33,7 +33,15 @@ public class TitanArmorMaterials {
                 attribute.put(ArmorItem.Type.LEGGINGS, 6);
                 attribute.put(ArmorItem.Type.CHESTPLATE, 8);
                 attribute.put(ArmorItem.Type.HELMET, 3);
-            }), 23, 1.0f, 0f, () -> TitanItems.TITAN_INGOT.get());
+            }), 20, 1.0f, 0.02f, () -> TitanItems.TITAN_INGOT.get());
+
+    public static final Holder<ArmorMaterial> NETHER_ARMOR_MATERIAL = register("nether",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 2);
+                attribute.put(ArmorItem.Type.LEGGINGS, 6);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 7);
+                attribute.put(ArmorItem.Type.HELMET, 2);
+            }), 13, 0.5f, 0.01f, () -> TitanItems.NETHER_INGOT.get());
 
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,

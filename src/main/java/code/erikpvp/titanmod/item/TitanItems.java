@@ -48,7 +48,7 @@ public class TitanItems {
 
     public static final DeferredItem<SwordItem> TITAN_SWORD = ITEMS.register("titan_sword",
             () -> new TitanSwordItem(TitanToolTiers.TITAN, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(TitanToolTiers.TITAN, 5, 9996f))));
+                    .attributes(SwordItem.createAttributes(TitanToolTiers.TITAN, 4, 9996f))));
 
     public static final DeferredItem<SwordItem> NETHER_SWORD = ITEMS.register("nether_sword",
             () -> new NetherSwordItem(TitanToolTiers.NETHER, new Item.Properties()
@@ -103,6 +103,43 @@ public class TitanItems {
     public static final DeferredItem<Item> TITAN_BOOTS = ITEMS.register("titan_boots",
             () -> new TitanBoots(TitanArmorMaterials.TITAN_ARMOR_MATERIAL,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(1))));
+
+    public static final DeferredItem<Item> NETHER_HELMET = ITEMS.register("nether_helmet",
+            () -> new ArmorItem(TitanArmorMaterials.NETHER_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(12))) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.titanmod.netherarmor.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+    public static final DeferredItem<Item> NETHER_CHESTPLATE = ITEMS.register("nether_chestplate",
+            () -> new ArmorItem(TitanArmorMaterials.NETHER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(12))) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.titanmod.netherarmor.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+    public static final DeferredItem<Item> NETHER_LEGGINGS = ITEMS.register("nether_leggings",
+            () -> new ArmorItem(TitanArmorMaterials.NETHER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(12))) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.titanmod.netherarmor.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+    public static final DeferredItem<Item> NETHER_BOOTS = ITEMS.register("nether_boots",
+            () -> new ArmorItem(TitanArmorMaterials.NETHER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(12))) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.titanmod.netherarmor.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

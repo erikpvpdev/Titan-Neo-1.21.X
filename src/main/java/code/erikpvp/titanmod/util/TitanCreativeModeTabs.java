@@ -28,7 +28,6 @@ public class TitanCreativeModeTabs {
                         output.accept(TitanItems.NETHER_SHARD);
                         output.accept(TitanItems.NETHER_INGOT);
                         output.accept(TitanItems.HANDLE);
-                        output.accept(TitanItems.LEGEND_UPGRADE_TEMPLATE);
                         output.accept(TitanBlocks.CITRIN_BLOCK);
                         output.accept(TitanBlocks.CITRIN_ORE);
                         output.accept(TitanBlocks.DEEPSLATE_CITRIN_ORE);

@@ -17,6 +17,10 @@
   "item.titanmod.citrin_chestplate": "§eCitrin Chestplate",
   "item.titanmod.citrin_leggings": "§eCitrin Leggings",
   "item.titanmod.citrin_boots": "§eCitrin Boots",
+  "item.titanmod.nether_helmet": "§cNether Helmet",
+  "item.titanmod.nether_chestplate": "§cNether Chestplate",
+  "item.titanmod.nether_leggings": "§cNether Leggings",
+  "item.titanmod.nether_boots": "§cNether Boots",
   "item.titanmod.titan_helmet": "§e§k|| §3Titan Helmet §e§k||§r",
   "item.titanmod.titan_chestplate": "§e§k|| §3Titan Chestplate §e§k||§r",
   "item.titanmod.titan_leggings": "§e§k|| §3Titan Leggings §e§k||§r",
@@ -36,6 +40,5 @@
   "tooltip.titanmod.citrin.tooltip": "§a25% Poison Chance",
   "tooltip.titanmod.nether.tooltip": "§c25% Fire Chance",
   "tooltip.titanmod.citrinarmor.tooltip": "§a25% Poison Protection",
-
-  "trim_pattern.titanmod.legend": "Legend Armor Trim"
+  "tooltip.titanmod.netherarmor.tooltip": "§c25% Fire Protection"
 }

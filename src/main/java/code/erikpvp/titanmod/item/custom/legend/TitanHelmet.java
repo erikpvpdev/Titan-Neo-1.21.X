@@ -31,4 +31,8 @@ public class TitanHelmet extends ArmorItem {
     public boolean isValidRepairItem(net.minecraft.world.item.ItemStack toRepair, net.minecraft.world.item.ItemStack repair) {
         return false;
     }
+    @Override
+    public int getEnchantmentValue() {
+        return 20;
+    }
 }

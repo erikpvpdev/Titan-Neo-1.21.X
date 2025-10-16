@@ -32,4 +32,8 @@ public class TitanSwordItem extends SwordItem {
     public boolean isValidRepairItem(ItemStack toRepair, ItemStack repair) {
         return true;
     }
+    @Override
+    public int getEnchantmentValue() {
+        return 20;
+    }
 }
