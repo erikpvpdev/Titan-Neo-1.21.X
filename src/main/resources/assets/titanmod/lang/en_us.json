@@ -7,6 +7,7 @@
   "item.titanmod.nether_shard": "Nether Shard",
   "item.titanmod.nether_ingot": "Nether Ingot",
   "item.titanmod.handle": "Handle",
+  "item.titanmod.legend_upgrade_template": "§eL§6e§cg§4e§cn§ed §aU§2p§ag§cr§4a§cd§6e §eT§6e§cm§4p§cl§6a§et§ae",
 
   "item.titanmod.titan_sword": "§e§k|| §3Titan Sword §e§k||§r",
   "item.titanmod.citrin_sword": "§eCitrin Sword",
@@ -34,5 +35,7 @@
 
   "tooltip.titanmod.citrin.tooltip": "§a25% Poison Chance",
   "tooltip.titanmod.nether.tooltip": "§c25% Fire Chance",
-  "tooltip.titanmod.citrinarmor.tooltip": "§a25% Poison Protection"
+  "tooltip.titanmod.citrinarmor.tooltip": "§a25% Poison Protection",
+
+  "trim_pattern.titanmod.legend": "Legend Armor Trim"
 }
