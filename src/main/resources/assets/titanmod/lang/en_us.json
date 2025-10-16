@@ -16,6 +16,10 @@
   "item.titanmod.citrin_chestplate": "§eCitrin Chestplate",
   "item.titanmod.citrin_leggings": "§eCitrin Leggings",
   "item.titanmod.citrin_boots": "§eCitrin Boots",
+  "item.titanmod.titan_helmet": "§e§k|| §3Titan Helmet §e§k||§r",
+  "item.titanmod.titan_chestplate": "§e§k|| §3Titan Chestplate §e§k||§r",
+  "item.titanmod.titan_leggings": "§e§k|| §3Titan Leggings §e§k||§r",
+  "item.titanmod.titan_boots": "§e§k|| §3Titan Boots §e§k||§r",
 
   "block.titanmod.citrin_ore": "Citrin Ore",
   "block.titanmod.deepslate_citrin_ore": "Deepslate Citrin Ore",

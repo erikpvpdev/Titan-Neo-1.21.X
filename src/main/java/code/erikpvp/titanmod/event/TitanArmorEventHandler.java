@@ -1,5 +1,6 @@
 package code.erikpvp.titanmod.event;
 
+import code.erikpvp.titanmod.TitanMod;
 import code.erikpvp.titanmod.item.custom.legend.TitanBoots;
 import code.erikpvp.titanmod.item.custom.legend.TitanChestplate;
 import code.erikpvp.titanmod.item.custom.legend.TitanHelmet;
@@ -11,20 +12,18 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.event.entity.player.PlayerEvent;
-import code.erikpvp.titanmod.item.custom.*;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
-@EventBusSubscriber
+@EventBusSubscriber(modid = TitanMod.MOD_ID)
 public class TitanArmorEventHandler {
 
     private static final ResourceLocation MODIFIER_ID = ResourceLocation.tryParse("titanmod:extra_health");
 
     @SubscribeEvent
-    public static void onPlayerTick(PlayerEvent event) {
-        // Safely get the player from the event
-        if (!(event.getEntity() instanceof Player player)) return;
-
-        if (MODIFIER_ID == null) return;
+    public static void onPlayerTick(PlayerTickEvent.Pre event) {
+        // Safely get the player
+        Player player = event.getEntity();
+        if (player == null || MODIFIER_ID == null) return;
 
         double bonusHealth = 0;
 
@@ -36,9 +35,11 @@ public class TitanArmorEventHandler {
             else if (armor.getItem() instanceof TitanBoots boots) bonusHealth += boots.getExtraHealth();
         }
 
+        // Remove previous modifier if present
         AttributeModifier existing = player.getAttribute(Attributes.MAX_HEALTH).getModifier(MODIFIER_ID);
         if (existing != null) player.getAttribute(Attributes.MAX_HEALTH).removeModifier(existing);
 
+        // Apply new modifier if any
         if (bonusHealth > 0) {
             AttributeModifier modifier = new AttributeModifier(MODIFIER_ID, bonusHealth, AttributeModifier.Operation.ADD_VALUE);
             player.getAttribute(Attributes.MAX_HEALTH).addTransientModifier(modifier);
