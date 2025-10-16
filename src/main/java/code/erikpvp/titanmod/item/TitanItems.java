@@ -104,9 +104,6 @@ public class TitanItems {
             () -> new TitanBoots(TitanArmorMaterials.TITAN_ARMOR_MATERIAL,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(1))));
 
-    public static final DeferredItem<Item> LEGEND_UPGRADE_TEMPLATE = ITEMS.register("legend_upgrade_template",
-            () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(TitanMod.MOD_ID, "legend")));
-
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

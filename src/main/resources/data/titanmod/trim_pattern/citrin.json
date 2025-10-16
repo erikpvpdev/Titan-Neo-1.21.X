@@ -1,8 +1,0 @@
-{
-  "asset_id": "titanmod:citrin",
-  "decal": false,
-  "description": {
-    "translate": "trim_pattern.titanmod.citrin"
-  },
-  "template_item": "titanmod:legend_upgrade_template"
-}
