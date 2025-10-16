@@ -7,6 +7,7 @@ import code.erikpvp.titanmod.item.custom.legend.TitanChestplate;
 import code.erikpvp.titanmod.item.custom.legend.TitanHelmet;
 import code.erikpvp.titanmod.item.custom.legend.TitanLeggings;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -102,6 +103,9 @@ public class TitanItems {
     public static final DeferredItem<Item> TITAN_BOOTS = ITEMS.register("titan_boots",
             () -> new TitanBoots(TitanArmorMaterials.TITAN_ARMOR_MATERIAL,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(1))));
+
+    public static final DeferredItem<Item> LEGEND_UPGRADE_TEMPLATE = ITEMS.register("legend_upgrade_template",
+            () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(TitanMod.MOD_ID, "legend")));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -21,13 +21,11 @@ public class TitanArmorEventHandler {
 
     @SubscribeEvent
     public static void onPlayerTick(PlayerTickEvent.Pre event) {
-        // Safely get the player
         Player player = event.getEntity();
         if (player == null || MODIFIER_ID == null) return;
 
         double bonusHealth = 0;
 
-        // Sum extra health from equipped TitanArmor pieces
         for (ItemStack armor : player.getArmorSlots()) {
             if (armor.getItem() instanceof TitanHelmet helmet) bonusHealth += helmet.getExtraHealth();
             else if (armor.getItem() instanceof TitanChestplate chest) bonusHealth += chest.getExtraHealth();
@@ -35,11 +33,9 @@ public class TitanArmorEventHandler {
             else if (armor.getItem() instanceof TitanBoots boots) bonusHealth += boots.getExtraHealth();
         }
 
-        // Remove previous modifier if present
         AttributeModifier existing = player.getAttribute(Attributes.MAX_HEALTH).getModifier(MODIFIER_ID);
         if (existing != null) player.getAttribute(Attributes.MAX_HEALTH).removeModifier(existing);
 
-        // Apply new modifier if any
         if (bonusHealth > 0) {
             AttributeModifier modifier = new AttributeModifier(MODIFIER_ID, bonusHealth, AttributeModifier.Operation.ADD_VALUE);
             player.getAttribute(Attributes.MAX_HEALTH).addTransientModifier(modifier);
