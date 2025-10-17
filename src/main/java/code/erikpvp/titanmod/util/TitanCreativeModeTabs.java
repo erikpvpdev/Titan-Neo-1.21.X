@@ -39,6 +39,7 @@ public class TitanCreativeModeTabs {
                         output.accept(TitanItems.TITAN_SWORD);
                         output.accept(TitanItems.CITRIN_SWORD);
                         output.accept(TitanItems.NETHER_SWORD);
+                        output.accept(TitanItems.TITAN_PICKAXE);
                         output.accept(TitanItems.CITRIN_HELMET);
                         output.accept(TitanItems.CITRIN_CHESTPLATE);
                         output.accept(TitanItems.CITRIN_LEGGINGS);

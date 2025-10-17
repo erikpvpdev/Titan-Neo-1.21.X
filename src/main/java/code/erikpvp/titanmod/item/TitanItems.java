@@ -9,6 +9,7 @@ import code.erikpvp.titanmod.item.custom.legend.TitanLeggings;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -53,6 +54,10 @@ public class TitanItems {
     public static final DeferredItem<SwordItem> NETHER_SWORD = ITEMS.register("nether_sword",
             () -> new NetherSwordItem(TitanToolTiers.NETHER, new Item.Properties()
                     .attributes(SwordItem.createAttributes(TitanToolTiers.NETHER, 2, 9996f))));
+
+    public static final DeferredItem<PickaxeItem> TITAN_PICKAXE = ITEMS.register("titan_pickaxe",
+            () -> new TitanPickaxeItem(TitanToolTiers.TITAN, new Item.Properties()));
+
 
     public static final DeferredItem<Item> CITRIN_HELMET = ITEMS.register("citrin_helmet",
             () -> new ArmorItem(TitanArmorMaterials.CITRIN_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
