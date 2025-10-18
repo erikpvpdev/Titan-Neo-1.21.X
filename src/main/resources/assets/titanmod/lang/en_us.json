@@ -35,11 +35,14 @@
   "block.titanmod.nether_ore": "Nether Ore",
   "block.titanmod.nether_block": "Nether Block",
   "block.titanmod.titan_block": "Titan Block",
+  "block.titanmod.diamondfurnace": "§bDiamond Furnace",
 
   "creativetab.titanmod.titan_tab": "§b§lTitan",
 
   "tooltip.titanmod.citrin.tooltip": "§a25% Poison Chance",
   "tooltip.titanmod.nether.tooltip": "§c25% Fire Chance",
   "tooltip.titanmod.citrinarmor.tooltip": "§a25% Poison Protection",
-  "tooltip.titanmod.netherarmor.tooltip": "§c25% Fire Protection"
+  "tooltip.titanmod.netherarmor.tooltip": "§c25% Fire Protection",
+
+  "title.titanmod.diamondfurnace": "§bDiamond Furnace"
 }
