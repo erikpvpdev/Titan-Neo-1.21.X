@@ -98,16 +98,16 @@ public class TitanItems {
 
     public static final DeferredItem<Item> TITAN_HELMET = ITEMS.register("titan_helmet",
             () -> new TitanHelmet(TitanArmorMaterials.TITAN_ARMOR_MATERIAL,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(1))));
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(10000))));
     public static final DeferredItem<Item> TITAN_CHESTPLATE = ITEMS.register("titan_chestplate",
             () -> new TitanChestplate(TitanArmorMaterials.TITAN_ARMOR_MATERIAL,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(1))));
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(10000))));
     public static final DeferredItem<Item> TITAN_LEGGINGS = ITEMS.register("titan_leggings",
             () -> new TitanLeggings(TitanArmorMaterials.TITAN_ARMOR_MATERIAL,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(1))));
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(10000))));
     public static final DeferredItem<Item> TITAN_BOOTS = ITEMS.register("titan_boots",
             () -> new TitanBoots(TitanArmorMaterials.TITAN_ARMOR_MATERIAL,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(1))));
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(10000))));
 
     public static final DeferredItem<Item> NETHER_HELMET = ITEMS.register("nether_helmet",
             () -> new ArmorItem(TitanArmorMaterials.NETHER_ARMOR_MATERIAL, ArmorItem.Type.HELMET,

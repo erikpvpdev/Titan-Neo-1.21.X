@@ -4,6 +4,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 
 public class TitanHelmet extends ArmorItem {
 
@@ -34,5 +35,9 @@ public class TitanHelmet extends ArmorItem {
     @Override
     public int getEnchantmentValue() {
         return 20;
+    }
+    @Override
+    public boolean isDamageable(ItemStack stack) {
+        return false;
     }
 }

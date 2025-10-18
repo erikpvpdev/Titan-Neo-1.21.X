@@ -3,6 +3,7 @@ package code.erikpvp.titanmod.item.custom.legend;
 import net.minecraft.core.Holder;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ItemStack;
 
 public class TitanLeggings extends ArmorItem {
 
@@ -33,5 +34,9 @@ public class TitanLeggings extends ArmorItem {
     @Override
     public int getEnchantmentValue() {
         return 20;
+    }
+    @Override
+    public boolean isDamageable(ItemStack stack) {
+        return false;
     }
 }
